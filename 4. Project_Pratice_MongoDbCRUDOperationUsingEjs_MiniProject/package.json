@@ -1,0 +1,20 @@
+{
+  "name": "3.-project_pratice_mongodb",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "mongoose": "^8.8.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.14"
+  }
+}

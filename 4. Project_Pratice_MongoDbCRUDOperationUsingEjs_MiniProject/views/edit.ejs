@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mongodb CRUD operation using ejs</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="w-screen h-screen bg-zinc-900 text-white">
+        <div class="nav p-10 flex items-center justify-end">
+            <a class="text-base text-blue-500" href="/read">Show Users</a>
+        </div>
+        <form action="/update/<%= user._id %>" method="post">
+            <div class="w-full h-full flex flex-col gap-3 items-center justify-center mt-10">
+                <h1 class="text-xl">Update User:</h1>
+                <input type="text" name="name" value="<%= user.name %>" placeholder="Name" class="px-2 py-3 bg-transparent outline-none border-2 border-zinc-500 rounded-md inline-block w-1/4">
+                <input type="text" name="email" value="<%= user.email %>" placeholder="Email" class="px-2 py-3 bg-transparent outline-none border-2 border-zinc-500 rounded-md inline-block w-1/4">
+                <input type="text" name="image" value="<%= user.image %>" placeholder="Image Url" class="px-2 py-3 bg-transparent outline-none border-2 border-zinc-500 rounded-md inline-block w-1/4">
+                <input type="submit" value="Update User" class="px-2 py-3 bg-yellow-500 text-black outline-none rounded-md inline-block w-1/4">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
